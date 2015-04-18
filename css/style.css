@@ -1,5 +1,67 @@
+html {
+  box-sizing: border-box;
+  background: url('../img/splash-bg.jpg') no-repeat center center fixed;  /*CREDITS  - Picture taken from: https://www.flickr.com/photos/74434277@N06/8136102013/*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	overflow-x: hidden;
+	font-family: 'Open Sans', sans-serif;
+}
 section {
     text-align: center;
-    height: 100vh;
-    width: 100vw;
+}
+
+h1 {
+	margin-bottom: 0;
+}
+
+.event-info p {
+	margin: 10px;
+	color: white;
+	font-weight: bold;
+	font-size: 1.3em;
+	line-height: 0.9;
+}
+
+
+.link-palestrante{
+	color: white;
+	font-size: 1em;
+	text-decoration: none;
+	border-bottom: 2px solid white;
+}
+
+.hero-button {
+	background: #F48038;
+	color: white;
+	text-transform: uppercase;
+	padding: 1em 2.1em;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 2%;
+	margin-top: 1%;
+}
+
+footer {
+	width: 100%;
+	background: #093B4D;
+	position: absolute;
+	padding: 0.4em;
+	bottom: 0;
+}
+
+footer a {
+	color: white;
+	font-size: 0.8em;
+	text-decoration: none;
+	font-weight: 300;
+}
+footer a:hover {
+	text-decoration: underline;
 }
