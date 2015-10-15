@@ -15,6 +15,16 @@ body {
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
 }
+
+.wrapper-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
 section {
     text-align: center;
 }
@@ -27,7 +37,15 @@ h1 {
     font-weight: bold;
     font-size: 1.3em;
     line-height: 0.9;
+    font-weight: 300;
 }
+
+.event-info .event-date{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+
 .link-palestrante {
     color: white;
     font-size: 1em;
@@ -38,11 +56,14 @@ h1 {
     background: #F48038;
     color: white;
     text-transform: uppercase;
+    display: inline-block;
     padding: 1em 2.1em;
     font-size: 1.2em;
     font-weight: bold;
-    margin-bottom: 2%;
-    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-top: 10%;
+    text-decoration: none;
+    border-bottom: 5px solid #DA5D10;
 }
 
 footer {
@@ -51,21 +72,27 @@ footer {
     position: absolute;
     padding: 0.4em;
     bottom: 0;
+    left: 0;
 }
 footer a {
     color: white;
     font-size: 0.8em;
     text-decoration: none;
     font-weight: 300;
+    width: 100%;
+    text-align: center;
+}
+
+footer div {
+    text-align: center;
 }
 footer a:hover {
     text-decoration: underline;
 }
-footer #social-networks {
-    text-align: right;
-}
+
 footer #social-networks a {
-    margin-right: 20px;
+    margin-right: 10px;
+    font-size: 1.2em;
 }
 footer #social-networks a:last-child {
     margin-right: 0;
