@@ -14,6 +14,8 @@ html {
 body {
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
+    padding-bottom: 50px;
+
 }
 
 .wrapper-flex {
@@ -23,11 +25,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 90vh;
-}
-
-section {
+    width: 100%;
     text-align: center;
 }
+
 h1 {
     margin-bottom: 0;
 }
@@ -35,8 +36,8 @@ h1 {
     margin: 10px;
     color: white;
     font-weight: bold;
-    font-size: 1.3em;
-    line-height: 0.9;
+    font-size: 1.4em;
+    line-height: 1.5;
     font-weight: 300;
 }
 
@@ -44,8 +45,6 @@ h1 {
     font-weight: bold;
     font-size: 1.5em;
 }
-
-
 .link-palestrante {
     color: white;
     font-size: 1em;
@@ -64,50 +63,102 @@ h1 {
     margin-top: 10%;
     text-decoration: none;
     border-bottom: 5px solid #DA5D10;
+    transition: .3s ease-in;
 }
+
+.hero-button:hover {
+    background: #DA5D10;
+}
+
 
 footer {
     width: 100%;
     background: #093B4D;
-    position: absolute;
-    padding: 0.4em;
+    position: fixed;
+    padding: 0.6em 0;
     bottom: 0;
     left: 0;
 }
 footer a {
     color: white;
-    font-size: 0.8em;
+    font-size: 1em;
     text-decoration: none;
     font-weight: 300;
     width: 100%;
     text-align: center;
 }
 
-footer div {
-    text-align: center;
-}
 footer a:hover {
     text-decoration: underline;
 }
 
-footer #social-networks a {
-    margin-right: 10px;
-    font-size: 1.2em;
-}
-footer #social-networks a:last-child {
-    margin-right: 0;
+
+footer .about-post {
+    display: flex;
+    justify-content: center;
 }
 
+
 @media only screen and (max-device-height: 480px) and (orientation: portrait) {
-    /* Match iPhone 4s and below height */
+    .wrapper-flex {
+        justify-content: flex-start;
+    }
+     .hero-button {
+        margin-top: 8px;
+        padding: 0.6em 2em;
+    }
+    .event-info p {
+        margin: 10px;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2em;
+        line-height: 1.5;
+        font-weight: 300;
+    }
 }
 
 @media screen and (max-width: 35.5em) {
+    
+    h1 {
+        margin-top: 0;
+    }
+    h1 img {
+        width: 45%;
+    }
+    .hero-button {
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    .event-info p {
+        line-height: 1.5;
+        margin: 0;
+    }
+    .event-info {
+        font-size: .9em;
+    }
     footer {
         text-align: center;
+        font-size: .9em;
     }
-    footer #social-networks {
-        margin-top: 20px;
-        text-align: center;
+}
+
+
+@media only screen and (max-device-height: 680px) and (orientation: landscape) {
+    .wrapper-flex {
+        justify-content: flex-start;
+    }
+     .hero-button {
+        margin-top: 8px;
+    }
+    .event-info p {
+        margin: 10px;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2em;
+        line-height: 1.5;
+        font-weight: 300;
+    }
+    .link-palestrante {
+        padding-bottom: 5em;
     }
 }
