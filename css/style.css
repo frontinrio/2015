@@ -200,7 +200,7 @@ footer .about-post {
     }
      .hero-button {
         margin-top: 25px;
-        width: 50%;
+        min-width: 50%;
     }
 }
 
