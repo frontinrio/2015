@@ -317,9 +317,8 @@ footer .about-post {
         width: 30px;
         height: 30px;
         cursor: pointer;
-        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' fill='white' width='20px' height='20px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='3'/><rect y='24' width='30' height='3'/><rect y='12' width='30' height='3'/></svg>");
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' fill='black' width='20px' height='20px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='3'/><rect y='24' width='30' height='3'/><rect y='12' width='30' height='3'/></svg>");
         background-size: contain;
-
     }
     nav li a {
         color: white;
@@ -355,7 +354,7 @@ footer .about-post {
     }
 
     #schedule .talker img {
-        display: none;
+        width: 60%;
     }
     footer a {
         font-size: .9em;
