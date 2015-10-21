@@ -1,12 +1,6 @@
 html {
     box-sizing: border-box;
-    background: url('../img/splash-bg.jpg') no-repeat center center fixed;
-    /*CREDITS  - Picture taken from: https://www.flickr.com/photos/74434277@N06/8136102013/*/
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -40,8 +34,79 @@ body {
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
-
 }
+
+
+.navigation {
+    list-style: none;
+    background: #093B4D;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-trigger {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.nav-trigger:checked + label {
+    left: 215px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+    left: 200px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+.nav-trigger + label, .site-wrap {
+    transition: left 0.2s;
+}
+
+label[for="nav-trigger"] {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+    background-size: contain;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    border-top: 1px solid rgba(255,255,255,0.6);
+    display: inline-block;
+    padding: 1em;
+    width: 100%;
+}
+
+nav li a:last-child {
+    border-bottom: 1px solid rgba(255,255,255,0.6);
+}
+
+
+.site-wrap {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #093B4D;
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
+}
+
 
 .wrapper-flex {
     display: flex;
@@ -49,6 +114,18 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+.first-section {
+    background: url('../img/splash-bg.jpg') no-repeat center center fixed;
+    /*CREDITS  - Picture taken from: https://www.flickr.com/photos/74434277@N06/8136102013/*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -118,25 +195,6 @@ h1 {
 }
 
 
-.show-footer {
-    background: #093B4D;
-    width: 50px;
-    height: 50px;
-    color: white;
-    text-align: center;
-    padding: .5em;
-    font-size: 1.2em;
-    position: fixed;
-    bottom: 0;
-    right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-input#show-footer {
-    visibility: hidden;
-    display: none;
-}
 
 footer {
     width: 100%;
@@ -208,14 +266,13 @@ footer .about-post {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 80%;
     }
     h1 {
         margin-top: 0;
         width: 50%;
     }
     h1 img {
-        width: 60%;
+        width: 50%;
     }
     .event-info {
         display: flex;

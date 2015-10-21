@@ -33,8 +33,8 @@
     <meta property="og:type" content="website">
     <meta property="og:description" content="Seja bem vindo ao Front In Rio 2015! Estamos preparando um dia de atividades iradas para você poder curtir o que há de melhor nessa comunidade: as pessoas. Veja o site do evento e inscreva-se!">
     <meta property="og:image" content="http://frontinrio.com.br/img/fbshare.png">
-    <meta property="og:image:type" content="image/png" /> 
-    <meta property="og:image:width" content="1200" /> 
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -50,48 +50,82 @@
 </head>
 
 <body>
-    <div class="wrapper-flex">
-        <section class="first-section" itemscope itemtype="http://schema.org/Event">
-            <h1 itemprop="name"> 
+    <header id="header" class="">
+        <nav>
+            <ul class="navigation">
+                <li>
+                    <a href="" title="">Home</a>
+                </li>
+                <li>
+                    <a href="" title="">Programação</a>
+                </li>
+                <li>
+                    <a href="" title="">Local</a>
+                </li>
+                <li>
+                    <a href="" title="">Sobre</a>
+                </li>
+                <li>
+                    <a href="" title="">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- /header -->
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label for="nav-trigger"></label>
+    <div class="site-wrap">
+        <div class="wrapper-flex">
+            <section class="first-section" itemscope itemtype="http://schema.org/Event">
+                <h1 itemprop="name"> 
                     <img src="img/logo-frontinrio.svg" alt="Logo Front in Rio 2015">
                 </h1>
-            <div class="event-info">
-                <meta itemprop="startDate" content="2015-06-06T06:00">
-                <p class="event-date">19 de Dezembro</p>
-                <p class="event-location" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                    <a href="https://www.google.com.br/maps/place/Clube+de+Engenharia/@-22.9048931,-43.1779741,15z/data=!4m2!3m1!1s0x0:0xff702cce0d4941da?sa=X&ved=0CH0Q_BIwCmoVChMI3ubqv_LOyAIVSoKQCh0cvQLg" target="_blank">
-                        <i class="flaticon-pin56"></i> Clube de Engenharia
-                        <br>
-                        <span itemprop="streetAddress"> Av. Rio Branco, 124 </span>, <span itemprop="addressLocality">Centro</span> - <span itemprop="addressRegion">RJ</span>
-                    </a>
-                </p>
-                <a class="hero-button" target="_blank" href="http://www.eventick.com.br/front-in-rio">Inscreva-se</a>
-                <a class="link-palestrante" href="https://docs.google.com/forms/d/1BC-UaDrioMb3YzE8cc50ILWbMfscM0tmeuwIrxT3sYE/viewform" target="_blank">Seja um palestrante!</a>
-                <a class="link-coc" href="img/coc.pdf" title="código de conduta - front in rio 2015" target="_blank">
+                <div class="event-info">
+                    <meta itemprop="startDate" content="2015-06-06T06:00">
+                    <p class="event-date">19 de Dezembro</p>
+                    <p class="event-location" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <a href="https://www.google.com.br/maps/place/Clube+de+Engenharia/@-22.9048931,-43.1779741,15z/data=!4m2!3m1!1s0x0:0xff702cce0d4941da?sa=X&ved=0CH0Q_BIwCmoVChMI3ubqv_LOyAIVSoKQCh0cvQLg" target="_blank">
+                            <i class="flaticon-pin56"></i> Clube de Engenharia
+                            <br>
+                            <span itemprop="streetAddress"> Av. Rio Branco, 124 </span>, <span itemprop="addressLocality">Centro</span> - <span itemprop="addressRegion">RJ</span>
+                        </a>
+                    </p>
+                    <a class="hero-button" target="_blank" href="http://www.eventick.com.br/front-in-rio">Inscreva-se</a>
+                    <a class="link-palestrante" href="https://docs.google.com/forms/d/1BC-UaDrioMb3YzE8cc50ILWbMfscM0tmeuwIrxT3sYE/viewform" target="_blank">Seja um palestrante!</a>
+                    <a class="link-coc" href="img/coc.pdf" title="código de conduta - front in rio 2015" target="_blank">
                     O evento segue um <span>Código de Conduta</span>
                 </a>
-            </div>
+                </div>
+            </section>
+        </div>
+        <section>
         </section>
-    </div>
-    <footer>
+        <!-- <footer>
         <div class="about-post">
             <a href="https://medium.com/@pedromarins/ebfdd65fde30" target="_blank">
                 Quer saber mais sobre o evento? Leia nosso post no Medium.
             </a>
         </div>
-    </footer>
+    </footer> -->
+    </div>
     <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-61999462-1']);
-        _gaq.push(['_trackPageview']);
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-61999462-1']);
+    _gaq.push(['_trackPageview']);
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-          ga('create', 'UA-69059226-1', 'auto');
-          ga('send', 'pageview');
-
+    ga('create', 'UA-69059226-1', 'auto');
+    ga('send', 'pageview');
     </script>
 </body>
 
