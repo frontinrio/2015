@@ -16,6 +16,12 @@ html {
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'BebasR';
+  src: url('BebasNeue Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+       
+}
+
 [class^="flaticon-"]:before,
 [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after,
@@ -123,7 +129,6 @@ nav a:hover {
     width: 100%;
     text-align: center;
     display: flex;
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -134,24 +139,28 @@ h1 {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 400;
     padding: 1rem 1.2rem;
     display: inline-block;
     margin-top: 3em;
     position: relative;
+    font-family: 'BebasR', 'Open Sans', sans-serif;
+}
+
+h2:after, h2:before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 35px;
+    background: #f48038;
 }
 
 h2:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80px;
-    height: 3px;
-    background: #f48038;
+    left: 0;
+}
+h2:before {
+    right: 0;
 }
 
 
@@ -311,7 +320,7 @@ li .talk-info:after {
 }
 
 li .talk-info.before-last:after {
-    bottom: -140px;
+    bottom: -120px;
 }
 
 #schedule li.last .talk-info{
@@ -357,7 +366,8 @@ li.last .talk-info:after {
 
 #location a {
     color: white;
-    background: #F48038;
+    background: transparent;
+    border: 2px solid #DA5D10;
     padding: 1em;
     margin-bottom: 40px;
     text-decoration: none;
@@ -380,6 +390,9 @@ li.last .talk-info:after {
     padding-bottom: 10%;
 }
 
+#sponsors h2 {
+    color: #093b4d;
+}
 #sponsors h3 {
     margin: 50px 0;
 }
@@ -394,20 +407,69 @@ li.last .talk-info:after {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 1em;
 }
 
 #about h2 {
     text-align: center;
 }
 
+#about p {
+    max-width: 600px;
+    line-height: 1.5;
+    padding: 0 2em;
+    text-align: justify;
+    word-break: break-all;
+}
+
+#about a {
+    background: #32999C;
+    padding: 1em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    transition: .4s ease-in-out;
+}
+
+#about a:hover {
+    background: #297172;
+}
+
+#contact {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2em;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: 50px 50px;
+    width: 90%;
+    max-width: 500px;
+}
+
+#contact form input, #contact form textarea {
+    padding: 1em;
+    margin: 10px 0;
+}
 footer {
     background: white;
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     color: #093B4D;
     font-weight: 400;
     text-align: center;
+    padding: 0 1em;
 }
 
 footer a {
@@ -509,11 +571,15 @@ footer a {
         padding-left: 30px;
     }
     #schedule .talker {
-        padding: 60px 0;
+        padding: 10px 0 60px 0;
     }
 
     #schedule .talker img {
         width: 80%;
+    }
+
+    li .talk-info.before-last:after {
+        bottom: -100px;
     }
     #schedule .talker-info {
         min-width: 0;
@@ -550,7 +616,7 @@ footer a {
     }
     .hero-button {
         margin-top: 25px;
-        min-width: 50%;
+        min-width: 30%;
         margin-bottom: 15px;
     }
 }
@@ -563,7 +629,6 @@ footer a {
         margin-top: 5px;
     }
     .link-palestrante {
-        padding: .5em;
         font-size: 1em
     }
     .hero-button {
