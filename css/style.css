@@ -335,19 +335,19 @@ li .talk-info:after {
 
 
 #schedule .lightning-talk .talker-info img {
-    border: 3px solid #093b4d;
+    border: 3px solid #32999C;
 }
 
 #schedule .lightning-talk .talk-info {
-    border-left: 3px solid #093b4d;
+    border-left: 3px solid #32999C;
 }
 
 #schedule .lightning-talk .talk-info:before {
-    border: 6px solid #093b4d;
+    border: 6px solid #32999C;
 }
 
 li.lightning-talk .talk-info:after {
-    border-left: 3px solid #093b4d;
+    border-left: 3px solid #32999C;
 }
 
 li .talk-info.before-last:after {
