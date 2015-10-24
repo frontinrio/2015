@@ -81,11 +81,10 @@ header {
 
 nav li {
     display: inline-block;
+    padding: 0 1em;
 }
 
-nav li:not(:last-child) {
-    padding: 1em;
-}
+
 
 nav li a {
     color: white;
@@ -373,7 +372,7 @@ li.last .talk-info:after {
     background: linear-gradient(
       rgba(9, 59, 77, .8), 
       rgba(9, 59, 77, .8)
-    ), url('../img/bg-local.jpg');
+    ), url('../img/bg-local.jpg') fixed;
     background-size: cover;
     background-position:center;
     display: flex;
@@ -403,7 +402,7 @@ li.last .talk-info:after {
     margin-bottom: 40px;
     text-decoration: none;
     font-weight: bold;
-    transition: .3s ease-in-out;
+    transition: .2s ease-in-out;
 }
 
 #location a:hover {
@@ -428,6 +427,21 @@ li.last .talk-info:after {
     margin: 50px 0;
 }
 
+.be-sponsor {
+    background: #32999C;
+    padding: 1em;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    transition: .4s ease-in-out;
+}
+
+.be-sponsor:hover {
+    background: #297172;
+}
+
 #sponsors .silver-sponsor img{
     width: 50%;
     margin: 1em;
@@ -439,6 +453,9 @@ li.last .talk-info:after {
     align-items: center;
     flex-direction: column;
     padding-bottom: 1em;
+    background: #093b4d url('../img/half-logo.png') fixed;
+    background-position: bottom right;
+    background-repeat: no-repeat;
 }
 
 #about h2 {
@@ -477,28 +494,31 @@ li.last .talk-info:after {
     padding-bottom: 2em;
 }
 
-#contact form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    margin: 50px 50px;
-    width: 90%;
-    max-width: 500px;
-    font-weight: 300;
+#contact a {
+    font-size: 2em;
+    text-decoration: none;
+    color: #093b4d;
+    transition: .3s ease-in-out;
 }
 
-#contact form input, #contact form textarea {
-    padding: 1em;
-    margin: 10px 0;
+#contact a:hover {
+    border-bottom: 2px solid #DA5D10;
 }
 
-#contact input[type="submit"] {
-    border: 2px solid #DA5D10;
-    background: transparent;
-    padding: 1.4em 0;
-    font-size: 1.2em;
+#contact .social-links {
+    margin: 2em;
+    margin-bottom: 1em;
 }
+#contact .social-links a {
+    margin: .5em;
+    transition: .3s ease-in-out;
+}
+
+#contact .social-links a:hover {
+    opacity: 0.7;
+}
+
+
 footer {
     background: white;
     width: 100%;
@@ -630,6 +650,11 @@ footer a {
     #location h3 {
         font-size: 2em;
     }
+    #about {
+     background: #093b4d ;
+   
+    }
+
 }
 
 @media screen and (min-width: 861px) {
