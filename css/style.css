@@ -17,9 +17,9 @@ html {
 }
 
 @font-face {
-  font-family: 'BebasR';
-  src: url('BebasNeue Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
-       
+    font-family: 'BebasR';
+    src: url('BebasNeue Regular.ttf') format('truetype');
+    /* Safari, Android, iOS */
 }
 
 [class^="flaticon-"]:before,
@@ -66,9 +66,8 @@ header {
 }
 
 .nav-trigger {
-   display: none; 
+    display: none;
 }
-
 
 .nav-trigger + label,
 {
@@ -84,8 +83,6 @@ nav li {
     padding: 0 1em;
 }
 
-
-
 nav li a {
     color: white;
     font-size: 1.2em;
@@ -99,7 +96,6 @@ nav li a {
 nav a:hover {
     border-bottom: 2px solid rgba(244, 128, 56, 0.9);
 }
-
 
 .site-wrap {
     min-width: 100%;
@@ -154,7 +150,8 @@ h2 {
     font-family: 'BebasR', 'Open Sans', sans-serif;
 }
 
-h2:after, h2:before {
+h2:after,
+h2:before {
     content: '';
     position: absolute;
     width: 3px;
@@ -165,11 +162,10 @@ h2:after, h2:before {
 h2:after {
     left: 0;
 }
+
 h2:before {
     right: 0;
 }
-
-
 
 .event-info p {
     margin: 10px;
@@ -245,6 +241,9 @@ nav li .hero-button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: white url('../img/half-logo.png') fixed;
+    background-position: bottom right;
+    background-repeat: no-repeat;
 }
 
 #schedule .talkers {
@@ -275,7 +274,8 @@ nav li .hero-button {
     position: absolute;
     left: -270px;
 }
-#schedule .talker-info p{
+
+#schedule .talker-info p {
     margin: 0;
     text-align: right;
 }
@@ -299,11 +299,9 @@ nav li .hero-button {
     position: relative;
 }
 
-#schedule .talk-info p{
+#schedule .talk-info p {
     max-width: 500px;
 }
-
-
 
 #schedule .talk-info h3 {
     margin: 10px 0;
@@ -332,6 +330,33 @@ li .talk-info:after {
     left: -3px;
 }
 
+.light-tag {
+    color: white;
+    background: #32999c;
+    padding: 1em;
+    position: relative;
+    z-index: 99;
+}
+
+.light-tag:after {
+    content: '';
+    width: 30px;
+    height: 96px;
+    background: transparent;
+    border-left: 3px solid #32999c;
+    position: absolute;
+    bottom: -78px;
+    left: 76px;
+    z-index: -1;
+}
+
+
+
+.light-tag.end:after {
+    border-left: 3px solid #DA5D10;
+    left: 81px;
+    height: 78px;
+}
 
 #schedule .lightning-talk .talker-info img {
     border: 3px solid #32999C;
@@ -353,7 +378,7 @@ li .talk-info.before-last:after {
     bottom: -120px;
 }
 
-#schedule li.last .talk-info{
+#schedule li.last .talk-info {
     border: none;
 }
 
@@ -369,12 +394,9 @@ li.last .talk-info:after {
 }
 
 #location {
-    background: linear-gradient(
-      rgba(9, 59, 77, .8), 
-      rgba(9, 59, 77, .8)
-    ), url('../img/bg-local.jpg') fixed;
+    background: linear-gradient( rgba(9, 59, 77, .8), rgba(9, 59, 77, .8)), url('../img/bg-local.jpg') fixed;
     background-size: cover;
-    background-position:center;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -384,6 +406,7 @@ li.last .talk-info:after {
 
 #location h2 {
     color: white;
+    margin-top: 100px;
 }
 
 #location h3 {
@@ -399,7 +422,7 @@ li.last .talk-info:after {
     background: transparent;
     border: 2px solid #DA5D10;
     padding: 1em;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
     text-decoration: none;
     font-weight: bold;
     transition: .2s ease-in-out;
@@ -408,7 +431,6 @@ li.last .talk-info:after {
 #location a:hover {
     background: #DA5D10;
 }
-
 
 #sponsors {
     background: white;
@@ -423,29 +445,36 @@ li.last .talk-info:after {
 #sponsors h2 {
     color: #093b4d;
 }
+
 #sponsors h3 {
     margin: 50px 0;
+    margin-bottom: 10px;
+    font-family: 'BebasR', sans-serif;
+    letter-spacing: 2px;
 }
 
 .be-sponsor {
-    background: #32999C;
+    background: none;
     padding: 1em;
     margin-top: 90px;
     margin-bottom: 50px;
     text-decoration: none;
-    color: white;
-    font-size: 1.5em;
+    color: #32999C;
+    font-size: 1.2em;
     transition: .4s ease-in-out;
+    border: 2px solid #32999C;
 }
 
 .be-sponsor:hover {
-    background: #297172;
+    background: #32999C;
+    color: white;
 }
 
-#sponsors .silver-sponsor img{
+#sponsors .silver-sponsor img {
     width: 50%;
     margin: 1em;
 }
+
 #about {
     display: flex;
     color: white;
@@ -471,18 +500,19 @@ li.last .talk-info:after {
 }
 
 #about a {
-    background: #32999C;
+    background: none;
+    border: 2px solid #32999C;
     padding: 1em;
     margin-top: 50px;
     margin-bottom: 50px;
     text-decoration: none;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.2em;
     transition: .4s ease-in-out;
 }
 
 #about a:hover {
-    background: #297172;
+    background: #32999C;
 }
 
 #contact {
@@ -501,6 +531,10 @@ li.last .talk-info:after {
     transition: .3s ease-in-out;
 }
 
+#contact a img {
+    padding: .2em;
+}
+
 #contact a:hover {
     border-bottom: 2px solid #DA5D10;
 }
@@ -509,15 +543,15 @@ li.last .talk-info:after {
     margin: 2em;
     margin-bottom: 1em;
 }
+
 #contact .social-links a {
-    margin: .5em;
+    margin: .3em;
     transition: .3s ease-in-out;
 }
 
 #contact .social-links a:hover {
     opacity: 0.7;
 }
-
 
 footer {
     background: white;
@@ -626,17 +660,30 @@ footer a {
         margin-top: 0;
         padding: .8em 1em;
     }
+    .light-tag {
+        left: -19px;
+    }
+    .light-tag:after {
+        left: 0;
+        height: 74px;
+        bottom: -30px;
+    }
+    .light-tag.end {
+        left: -14px;
+    }
+    .light-tag.end:after {
+        border-left: 3px solid #DA5D10;
+        height: 30px;
+    }
     #schedule .talk-info {
         padding-left: 30px;
     }
     #schedule .talker {
         padding: 10px 0 60px 0;
     }
-
     #schedule .talker img {
         width: 80%;
     }
-
     li .talk-info.before-last:after {
         bottom: -100px;
     }
@@ -651,10 +698,8 @@ footer a {
         font-size: 2em;
     }
     #about {
-     background: #093b4d ;
-   
+        background: #093b4d;
     }
-
 }
 
 @media screen and (min-width: 861px) {
