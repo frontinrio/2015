@@ -353,7 +353,7 @@ li .talk-info.before-last:after {
 }
 
 #schedule li.last .talk-info {
-    border: none;
+    border-color: transparent;
 }
 
 li.last .talk-info:after {
