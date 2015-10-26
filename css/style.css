@@ -367,6 +367,19 @@ li.last .talk-info:after {
     text-align: center;
 }
 
+.talk-time {
+    position: relative;
+    background: #DA5D10;
+    display: inline-block;
+    color: white;
+    padding: .5em;
+}
+
+.talk-time.lightining {
+    background: #32999C;
+}
+
+
 #location {
     background: linear-gradient( rgba(9, 59, 77, .8), rgba(9, 59, 77, .8)), url('../img/bg-local.jpg') fixed;
     background-size: cover;
