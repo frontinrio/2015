@@ -273,6 +273,7 @@ nav li .hero-button {
     align-items: flex-end;
     position: absolute;
     left: -270px;
+    top: 0;
 }
 
 #schedule .talker-info p {
