@@ -462,6 +462,11 @@ li.last .talk-info:after {
     margin: 1em;
 }
 
+#sponsors .bronze-sponsor img {
+    width: 40%;
+    margin: 1em;
+}
+
 #about {
     display: flex;
     color: white;
