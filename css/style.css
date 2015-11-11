@@ -368,6 +368,12 @@ li.last .talk-info:after {
     text-align: center;
 }
 
+.talker-twitter {
+    color: rgba(9, 59, 77, 1);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
 .talk-time {
     position: relative;
     background: #DA5D10;
@@ -542,6 +548,7 @@ li.last .talk-info:after {
     align-items: center;
     flex-direction: column;
     padding-bottom: 2em;
+    text-align: center;
 }
 
 #contact a {
@@ -550,7 +557,7 @@ li.last .talk-info:after {
     color: #093b4d;
     transition: .3s ease-in-out;
     width: 100%;
-    padding: 1em;
+    padding: 1em 0;
     word-wrap: break-word;
     text-align: center;
 }
@@ -596,6 +603,8 @@ footer a {
     width: 100%;
     text-align: center;
 }
+
+
 
 @media screen and (max-height: 550px) {
     .wrapper-flex {
@@ -785,3 +794,6 @@ footer a {
         width: 35%;
     }
 }
+
+
+
