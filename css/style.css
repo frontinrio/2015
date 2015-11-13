@@ -267,17 +267,16 @@ nav li .hero-button {
 }
 
 #schedule .talker-info {
-    min-width: 206px;
+    min-width: 505px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    left: -270px;
+    left: -570px;
     top: 0;
 }
 
 #schedule .talker-info p {
-    margin: 0;
     text-align: right;
 }
 
@@ -285,11 +284,29 @@ nav li .hero-button {
     font-weight: bold;
     font-size: 1.2em;
     margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.talker-bio {
+    font-weight: 300;
+}
+
+#schedule .talker-pic {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    overflow: hidden;
+    border: 3px solid #DA5D10;
 }
 
 #schedule .talker-info img {
-    border: 3px solid #DA5D10;
     width: 200px;
+   
+}
+
+#schedule .arlindo img {
+    position: relative;
+    top: -50px;
 }
 
 #schedule .talk-info {
@@ -303,7 +320,7 @@ nav li .hero-button {
 }
 
 #schedule .talk-info p {
-    max-width: 500px;
+    max-width: 400px;
 }
 
 #schedule .talk-info h3 {
@@ -333,7 +350,7 @@ li .talk-info:after {
     left: -3px;
 }
 
-#schedule .lightning-talk .talker-info img {
+#schedule .lightning-talk .talker-pic {
     border: 3px solid #32999C;
 }
 
@@ -528,7 +545,7 @@ li.last .talk-info:after {
     flex-direction: column;
 }
 .organizers img {
-    border: 3px solid #DA5D10;;
+    border: 3px solid #DA5D10;
 }
 
 .organizers figcaption {
@@ -558,6 +575,7 @@ li.last .talk-info:after {
     transition: .3s ease-in-out;
     width: 100%;
     padding: 1em 0;
+    padding-bottom: 0;
     word-wrap: break-word;
     text-align: center;
 }
@@ -737,6 +755,10 @@ footer a {
         left: 0;
         margin-bottom: 40px;
     }
+     #schedule .talker-info p {
+        text-align: left;
+        }
+      
     #location h3 {
         font-size: 2em;
     }
