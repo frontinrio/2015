@@ -300,7 +300,7 @@ nav li .hero-button {
 }
 
 #schedule .talker-info img {
-    width: 200px;
+    width: 100%;
    
 }
 
@@ -741,9 +741,6 @@ footer a {
     }
     #schedule .talker {
         padding: 10px 0 60px 0;
-    }
-    #schedule .talker img {
-        width: 80%;
     }
     li .talk-info.before-last:after {
         bottom: -150px;
