@@ -320,7 +320,11 @@ nav li .hero-button {
 }
 
 #schedule .talk-info p {
-    max-width: 400px;
+    max-width: 380px;
+}
+
+#schedule .talk-info h3.talk-title {
+    margin-top: 20px;
 }
 
 #schedule .talk-info h3 {
@@ -815,4 +819,14 @@ footer a {
 }
 
 
-
+@media screen and (max-height: 410px) {
+    .wrapper-flex {
+        display: inline-block;
+        height: auto;
+    }
+    .first-section {
+        height: auto;
+        width: auto;
+        display: inline-block;
+    }
+}
