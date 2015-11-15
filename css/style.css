@@ -40,6 +40,10 @@ html {
     content: "\e001";
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 body {
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
@@ -304,7 +308,7 @@ nav li .hero-button {
    
 }
 
-#schedule .arlindo img {
+#schedule img.arlindo {
     position: relative;
     top: -50px;
 }
@@ -364,6 +368,7 @@ li .talk-info:after {
 
 #schedule .lightning-talk .talk-info:before {
     border: 6px solid #32999C;
+    background: url('../img/raio.svg'), white;
 }
 
 li.lightning-talk .talk-info:after {
