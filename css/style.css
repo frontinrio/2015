@@ -545,6 +545,9 @@ li.last .talk-info:after {
     padding-bottom: 50px;
     text-align: center;
 }
+#about h2.organizers-title {
+    margin-top: 20px;
+}
 
 .organizers a {
     text-decoration: none;
