@@ -218,7 +218,7 @@ h2:before {
     text-transform: uppercase;
     display: inline-block;
     padding: 1em 2.1em;
-    font-size: 1.2em;
+    font-size: 1.7em;
     font-weight: bold;
     margin-bottom: 5%;
     margin-top: 10%;
@@ -721,7 +721,7 @@ footer a {
     .hero-button {
         margin-top: 5%;
         padding: .8em 2.5em;
-        font-size: 1em;
+        font-size: 1.3em;
     }
     .link-palestrante {
         display: inline-block;
@@ -798,7 +798,7 @@ footer a {
         font-size: 2.5em;
     }
     .hero-button {
-        margin-top: 25px;https://www.facebook.com/events/920356794710905/
+        margin-top: 35px;
         min-width: 30%;
         margin-bottom: 15px;
     }
@@ -815,7 +815,7 @@ footer a {
         font-size: 1em
     }
     .hero-button {
-        margin-top: 3%;
+        margin-top: 10%;
         padding: .8em 1em;
     }
 }
