@@ -249,6 +249,11 @@ h2:before {
     padding: 0 8em;
     margin: 90px 0;
 }
+img.arlindo {
+    position: relative;
+    top: -50px;
+}
+
 
 #talkers .talker {
     flex: 1 350px;
@@ -922,7 +927,7 @@ footer a {
     }
 }
 
-@media screen and (min-width: 861px) {
+@media screen and (min-width: 701px) {
     .first-section {
         flex-direction: row;
     }
