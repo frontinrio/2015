@@ -232,14 +232,73 @@ h2:before {
     background: #DA5D10;
 }
 
-nav li .hero-button {
-    margin: 0;
-    border: 2px solid #DA5D10;
-    background: transparent;
-    padding: .8em 1.2em;
+#talkers h2 {
+    margin-bottom: 0;
 }
 
-#schedule {
+#talkers .small-soon {
+    margin-top: 0;
+}
+
+#talkers ul.talkers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0 2em;
+    margin: 90px 0;
+}
+
+#talkers .talker {
+    flex: 1 350px;
+    padding: 1em;
+    margin: 1em;
+    max-height: 500px;
+    overflow: hidden;
+    background: white;
+    transition: .2s ease-in-out;
+    
+}
+
+#talkers .talker:hover {
+    transform: scale(1.1);
+   -webkit-box-shadow: 0px 13px 77px -8px rgba(0,0,0,0.54);
+    -moz-box-shadow: 0px 13px 77px -8px rgba(0,0,0,0.54);
+    box-shadow: 0px 13px 77px -8px rgba(0,0,0,0.54);
+}
+
+#talkers .talker.full-talk {
+    border: 2px solid #DA5D10;
+}
+
+#talkers .talker.lightning {
+    border: 2px solid #32999C;
+}
+
+
+.talker figure {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.talker .talker-name {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+}
+.talker .talker-twitter{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    color: rgba(9, 59, 77, 1);
+}
+
+#schedule, #talkers {
     background: white;
     display: flex;
     flex-direction: column;
@@ -249,7 +308,7 @@ nav li .hero-button {
     background-position: bottom right;
     background-repeat: no-repeat;
 }
-
+/*
 #schedule .talkers {
     display: flex;
     justify-content: center;
@@ -412,7 +471,7 @@ li.last .talk-info:after {
 .talk-time.lightining {
     background: #32999C;
 }
-
+*/
 
 #location {
     background: linear-gradient( rgba(9, 59, 77, .8), rgba(9, 59, 77, .8)), url('../img/bg-local.jpg') fixed;
@@ -522,7 +581,7 @@ li.last .talk-info:after {
     line-height: 1.5;
     padding: 0 2em;
     text-align: justify;
-    word-break: break-all;
+    word-break: break-word;
 }
 
 #about .coc-button{
