@@ -246,36 +246,124 @@ h2:before {
     justify-content: center;
     align-items: flex-start;
     list-style: none;
-    padding: 0 2em;
+    padding: 0 8em;
     margin: 90px 0;
 }
 
 #talkers .talker {
     flex: 1 350px;
-    padding: 1em;
+    padding: 3em;
     margin: 1em;
-    max-height: 500px;
+    height: 560px;
+    max-height: 560px;
     overflow: hidden;
     background: white;
+    text-align: center;
     transition: .2s ease-in-out;
-    
+
 }
 
+.talker .talk-description {
+    text-align: left;
+}
+
+.talker.soon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#talkers label {
+    flex: 1 450px;
+    width: 100%;
+}
+
+.see-more {
+    position: relative;
+}
+
+.see-more:after {
+    content: '...';
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background: rgba(255,255,255,.95);
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    font-size: 3em;
+    color: #DA5D10;
+    font-weight: bold;
+}
+
+#talk-desc1, 
+#talk-desc2,
+#talk-desc3,
+#talk-desc4,
+#talk-desc5,
+#talk-desc6,
+#talk-desc7,
+#talk-desc8,
+#talk-desc9,
+#talk-desc10,
+#talk-desc11,
+#talk-desc12 {
+    visibility: hidden;
+    position: absolute;
+}
+
+#talk-desc1:checked + .talker, 
+#talk-desc2:checked + .talker, 
+#talk-desc3:checked + .talker,
+#talk-desc4:checked + .talker,
+#talk-desc5:checked + .talker,
+#talk-desc6:checked + .talker,
+#talk-desc7:checked + .talker,
+#talk-desc8:checked + .talker,
+#talk-desc9:checked + .talker,
+#talk-desc10:checked + .talker,
+#talk-desc11:checked + .talker,
+#talk-desc12:checked + .talker {
+    max-height: 2000px;
+    height: auto;
+    overflow: visible;
+}
+
+#talk-desc1:checked + .see-more:after,
+#talk-desc2:checked + .see-more:after,
+#talk-desc3:checked + .see-more:after,
+#talk-desc4:checked + .see-more:after,
+#talk-desc5:checked + .see-more:after,
+#talk-desc6:checked + .see-more:after,
+#talk-desc7:checked + .see-more:after,
+#talk-desc8:checked + .see-more:after,
+#talk-desc9:checked + .see-more:after,
+#talk-desc10:checked + .see-more:after,
+#talk-desc11:checked + .see-more:after,
+#talk-desc12:checked + .see-more:after{
+    display: none;
+}
+
+
 #talkers .talker:hover {
-    transform: scale(1.1);
+    cursor: pointer;
    -webkit-box-shadow: 0px 13px 77px -8px rgba(0,0,0,0.54);
     -moz-box-shadow: 0px 13px 77px -8px rgba(0,0,0,0.54);
     box-shadow: 0px 13px 77px -8px rgba(0,0,0,0.54);
+    
 }
 
 #talkers .talker.full-talk {
-    border: 2px solid #DA5D10;
+    border: 4px solid #DA5D10;
 }
 
 #talkers .talker.lightning {
-    border: 2px solid #32999C;
+    border: 4px solid #32999C;
 }
 
+#talkers .talker.lightning.see-more:after{
+  color: #32999C;
+}
 
 .talker figure {
     width: 200px;
@@ -580,8 +668,6 @@ li.last .talk-info:after {
     max-width: 600px;
     line-height: 1.5;
     padding: 0 2em;
-    text-align: justify;
-    word-break: break-word;
 }
 
 #about .coc-button{
