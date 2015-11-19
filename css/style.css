@@ -377,6 +377,16 @@ img.arlindo {
     margin: 0 auto;
 }
 
+.talker.lightning .talk-title:before {
+    content: '';
+    background: url('../img/raio.svg');
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
 .talker .talker-name {
     font-size: 1.3em;
     font-weight: bold;
@@ -763,6 +773,11 @@ li.last .talk-info:after {
 
 #contact .social-links a:hover {
     opacity: 0.3;
+}
+
+#contact .email {
+    padding-left: .5em;
+    padding-right: .5em;
 }
 
 footer {
