@@ -256,10 +256,9 @@ img.arlindo {
 
 
 #talkers .talker {
-    flex: 1 350px;
-    padding: 3em;
+    padding: 2em;
     margin: 1em;
-    height: 560px;
+    height: 500px;
     max-height: 560px;
     overflow: hidden;
     background: white;
@@ -279,7 +278,7 @@ img.arlindo {
 }
 
 #talkers label {
-    flex: 1 450px;
+    flex: 1 350px;
     width: 100%;
 }
 
