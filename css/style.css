@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 *,
@@ -145,7 +146,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: 400;
     padding: 1rem 1.2rem;
     display: inline-block;
@@ -159,7 +160,7 @@ h2:before {
     content: '';
     position: absolute;
     width: 3px;
-    height: 35px;
+    height: 40px;
     background: #f48038;
 }
 
@@ -821,6 +822,19 @@ footer a {
     .talker.lightning .talk-title:before {
         right: 4px;
     }
+
+    h2 {
+        font-size: 2.5em;
+    }
+    h2:after,
+    h2:before {
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 35px;
+        background: #f48038;
+    }
+
 }
 
 @media screen and (max-width: 700px) {
