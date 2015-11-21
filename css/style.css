@@ -65,9 +65,15 @@ header {
     z-index: 10;
     margin: 0;
     padding: 1em;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .nav-trigger {
@@ -115,11 +121,21 @@ nav a:hover {
 }
 
 .wrapper-flex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -128,17 +144,22 @@ nav a:hover {
 .first-section {
     background: url('../img/splash-bg.jpg') no-repeat center center fixed;
     /*CREDITS  - Picture taken from: https://www.flickr.com/photos/74434277@N06/8136102013/*/
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     height: 100%;
     width: 100%;
     text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 h1 {
@@ -197,7 +218,7 @@ h2:before {
     text-decoration: none;
     padding: 1em;
     border: 1px solid white;
-    transition: .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .link-palestrante:hover {
@@ -225,7 +246,7 @@ h2:before {
     margin-top: 10%;
     text-decoration: none;
     border-bottom: 5px solid #DA5D10;
-    transition: .3s ease-in-out;
+    transition: all .3s ease-in-out;
     margin: 1em;
 }
 
@@ -242,10 +263,18 @@ h2:before {
 }
 
 #talkers ul.talkers {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     list-style: none;
     padding: 0 8em;
     margin: 90px 0;
@@ -269,7 +298,7 @@ img.andrea {
     overflow: hidden;
     background: white;
     text-align: center;
-    transition: .2s ease-in-out;
+    transition: all 1s;
 }
 
 .talker .talk-description {
@@ -277,13 +306,21 @@ img.andrea {
 }
 
 .talker.soon {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 #talkers label {
-    flex: 1 450px;
+    -webkit-flex: 1 450px;
+        -ms-flex: 1 450px;
+            flex: 1 450px;
     width: 100%;
 }
 
@@ -355,8 +392,6 @@ img.andrea {
 
 #talkers .talker:hover {
     cursor: pointer;
-    -webkit-box-shadow: 0px 13px 77px -8px rgba(0, 0, 0, 0.54);
-    -moz-box-shadow: 0px 13px 77px -8px rgba(0, 0, 0, 0.54);
     box-shadow: 0px 13px 77px -8px rgba(0, 0, 0, 0.54);
 }
 
@@ -382,8 +417,8 @@ img.andrea {
 .talker.lightning .talk-title:before {
     content: '';
     background: url('../img/raio.svg');
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -407,10 +442,18 @@ img.andrea {
 #schedule,
 #talkers {
     background: white;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: white url('../img/half-logo.png') fixed;
     background-position: bottom right;
     background-repeat: no-repeat;
@@ -586,10 +629,18 @@ li.last .talk-info:after {
     background: linear-gradient( rgba(9, 59, 77, .8), rgba(9, 59, 77, .8)), url('../img/bg-local.jpg') fixed;
     background-size: cover;
     background-position: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: white;
 }
 
@@ -614,7 +665,7 @@ li.last .talk-info:after {
     margin-bottom: 100px;
     text-decoration: none;
     font-weight: bold;
-    transition: .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 #location a:hover {
@@ -623,10 +674,18 @@ li.last .talk-info:after {
 
 #sponsors {
     background: white;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     padding-bottom: 10%;
 }
@@ -650,7 +709,7 @@ li.last .talk-info:after {
     text-decoration: none;
     color: #32999C;
     font-size: 1.2em;
-    transition: .4s ease-in-out;
+    transition: all .4s ease-in-out;
     border: 2px solid #32999C;
 }
 
@@ -670,11 +729,19 @@ li.last .talk-info:after {
 }
 
 #about {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     color: white;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-bottom: 1em;
     background: #093b4d url('../img/half-logo.png') fixed;
     background-position: bottom right;
@@ -700,7 +767,7 @@ li.last .talk-info:after {
     text-decoration: none;
     color: white;
     font-size: 1.2em;
-    transition: .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 #about .coc-button:hover {
@@ -708,6 +775,8 @@ li.last .talk-info:after {
 }
 
 .organizers {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     padding-bottom: 50px;
     text-align: center;
@@ -722,8 +791,12 @@ li.last .talk-info:after {
 }
 
 .organizers figure {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .organizers img {
@@ -742,10 +815,18 @@ li.last .talk-info:after {
 
 #contact {
     background: white;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-bottom: 2em;
     text-align: center;
 }
@@ -754,7 +835,7 @@ li.last .talk-info:after {
     font-size: 2em;
     text-decoration: none;
     color: #093b4d;
-    transition: .3s ease-in-out;
+    transition: all .3s ease-in-out;
     width: 100%;
     padding: 1em 0;
     padding-bottom: 0;
@@ -792,9 +873,15 @@ li.last .talk-info:after {
 footer {
     background: white;
     width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #093B4D;
     font-weight: 400;
     text-align: center;
@@ -811,13 +898,17 @@ footer a {
 
 @media screen and (max-height: 550px) {
     .wrapper-flex {
-        justify-content: flex-start;
+        -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
     }
 }
 
 @media screen and (max-width: 600px) {
     .organizers {
-        flex-direction: column;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .talker.lightning .talk-title:before {
         right: 4px;
@@ -948,7 +1039,9 @@ footer a {
     }
     #schedule .talker-info {
         min-width: 0;
-        align-items: flex-start;
+        -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+                align-items: flex-start;
         position: relative;
         left: 0;
         margin-bottom: 40px;
@@ -966,7 +1059,9 @@ footer a {
 
 @media screen and (min-width: 701px) {
     .first-section {
-        flex-direction: row;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
     }
     h1 {
         margin-top: 0;
@@ -976,9 +1071,15 @@ footer a {
         width: 50%;
     }
     .event-info {
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
         border-left: 1px solid white;
         width: 50%;
     }
