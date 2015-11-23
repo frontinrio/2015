@@ -80,7 +80,7 @@ header {
     display: none;
 }
 
-.nav-trigger + label,
+.nav-trigger + label
 {
     display: none;
 }
@@ -414,7 +414,7 @@ img.andrea {
     margin: 0 auto;
 }
 
-.talker.lightning .talk-title:before {
+.talker.lightning .talk-info:before {
     content: '';
     background: url('../img/raio.svg');
     width: 25px;
@@ -462,11 +462,21 @@ img.andrea {
 
 
 #schedule .talkers {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     padding: 0;
     margin-top: 100px;
@@ -474,18 +484,32 @@ img.andrea {
 
 #schedule .talker {
     padding: 60px 60px 60px 400px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     width: 100%;
 }
 
 #schedule .talker-info {
     min-width: 505px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     position: absolute;
     left: -570px;
     top: 0;
@@ -559,7 +583,7 @@ img.andrea {
     left: -16px;
 }
 
-li .talk-info:after {
+#schedule li .talk-info:after {
     content: '';
     width: 30px;
     height: 256px;
@@ -583,19 +607,19 @@ li .talk-info:after {
     background: url('../img/raio.svg'), white;
 }
 
-li.lightning-talk .talk-info:after {
+#schedule li.lightning-talk .talk-info:after {
     border-left: 3px solid #32999C;
 }
 
-li .talk-info.before-last:after {
-    bottom: -220px;
+#schedule li .talk-info.before-last:after {
+    bottom: -200px;
 }
 
 #schedule li.last .talk-info {
     border-color: transparent;
 }
 
-li.last .talk-info:after {
+#schedule li.last .talk-info:after {
     content: '';
     width: 0;
     height: 0;
@@ -614,7 +638,7 @@ li.last .talk-info:after {
     margin: 0;
 }
 
-.talk-time {
+#schedule .talk-time {
     position: relative;
     background: #DA5D10;
     display: inline-block;
@@ -622,7 +646,7 @@ li.last .talk-info:after {
     padding: .5em;
 }
 
-.talk-time.lightning {
+#schedule .talk-time.lightning {
     background: #32999C;
 }
 
@@ -815,6 +839,37 @@ li.last .talk-info:after {
     font-size: 1.2rem;
 }
 
+.subscribe {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: white;
+    text-align: center;
+}
+
+.subscribe a.hero-button {
+    text-align: center;
+}
+
+.subscribe h3 {
+    font-size: 1.5em;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.subscribe small {
+    font-weight: 300;
+}
+
 #contact {
     background: white;
     display: -webkit-flex;
@@ -957,27 +1012,35 @@ footer a {
         position: absolute;
         clip: rect(0, 0, 0, 0);
     }
-    .nav-trigger:checked + label {
-        left: 215px;
+    .nav-trigger:checked + label img {
+        left: 200px;
     }
     .nav-trigger:checked ~ .site-wrap {
         left: 200px;
         box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
     }
-    .nav-trigger + label,
+    .nav-trigger + label img,
     .site-wrap {
         transition: left 0.2s;
     }
     label[for="nav-trigger"] {
+        position: relative;
+        height: 30px;
+        width: 30px;
+        top: 0;
+        display: inline;
+    }
+    label[for="nav-trigger"] img {
         position: fixed;
         top: 15px;
-        left: 15px;
+        left: 0;
         z-index: 2;
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
         cursor: pointer;
-        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' fill='#DA5D10' width='20px' height='20px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='3'/><rect y='24' width='30' height='3'/><rect y='12' width='30' height='3'/></svg>");
-        background-size: contain;
+        display: block;
+        background: rgba(9, 59, 77, .9);
+        padding: 10px;
     }
     nav li a {
         color: white;
@@ -1057,6 +1120,10 @@ footer a {
     #about {
         background: #093b4d;
     }
+    #schedule li .talk-info.before-last:after {
+        bottom: -180px;
+    }
+
 }
 
 @media screen and (min-width: 701px) {
