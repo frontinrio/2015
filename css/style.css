@@ -752,6 +752,7 @@ img.andrea {
 #sponsors .web-sponsor img {
     width: 15%;
     margin: 1em;
+    vertical-align: middle;
 }
 
 #about {
