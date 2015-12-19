@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# version 2015-12-19|09:11
+# version 2015-12-19|09:18
 
 CACHE:
 img/apple-touch-icon-114x114.png
@@ -62,3 +62,4 @@ img/palestrantes/richard-duchatsch.jpg
 
 NETWORK:
 https://www.google-analytics.com/analytics.js
+http://fonts.gstatic.com/*
