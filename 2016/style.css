@@ -1,0 +1,145 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+@font-face {
+    font-family: "Flaticon";
+    src: url("flaticon.eot");
+    src: url("flaticon.eot#iefix") format("embedded-opentype"), url("flaticon.woff") format("woff"), url("flaticon.ttf") format("truetype"), url("flaticon.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasR';
+    src: url('../css/BebasNeue Regular.ttf') format('truetype');
+    /* Safari, Android, iOS */
+}
+
+body {
+    background: url('../img/splash-bg.jpg') no-repeat center center fixed;
+    /*CREDITS  - Picture taken from: https://www.flickr.com/photos/74434277@N06/8136102013/*/
+    background-size: cover;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	margin-top: 50px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2.4rem;
+	font-weight: 300;
+	margin-bottom: 80px;
+	padding: 1em;
+}
+
+.first-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.first-section img {
+	flex: 1;
+	width: 70%;
+}
+
+.columns {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.columns p {
+	color: white;
+	font-size: 2em;
+	font-family: 'Open Sans';
+	font-weight: 300;
+	margin-bottom: 5px;
+}
+
+.hero-button {
+	width: 70%;
+    background: #32C0C4;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 1em 2.1em;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 5px solid #279699;
+    transition: all .3s ease-in-out;
+}
+
+.hero-button:hover {
+    background: #279699;
+}
+
+
+footer p {
+	color: white;
+	text-align: center;
+	font-weight: 300;
+}
+
+@media screen and (max-width: 599px) {
+	h1 {
+		font-size: 1.4em;
+	}
+
+	.first-section {
+		flex-direction: column;
+	}
+	.first-section p {
+		margin-bottom: 0;
+		margin-top: 8px;
+	}
+	.hero-button {
+		margin-bottom: 50px;
+		font-size: 1em;
+		padding: 1em;
+	}
+	body {
+	    background: #093B4D;
+	    
+	}	
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+	h1 {
+		font-size: 2em;
+	}
+
+	.first-section {
+		flex-direction: column;
+	}
+	.first-section p {
+		margin-bottom: 0;
+		margin-top: 8px;
+	}
+	.hero-button {
+		margin-bottom: 50px;
+		font-size: 1.4em;
+		padding: 1em;
+	}
+}
